@@ -25,9 +25,9 @@ export default function App() {
   }, []);
 
   const navLinks = [
-    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Realisations', href: '#portfolio' },
     { name: 'Services', href: '#services' },
-    { name: 'Story', href: '#story' },
+    { name: 'Histoire', href: '#story' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -106,7 +106,7 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-ink z-10" />
           <img 
             src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" 
-            alt="Luxury Home Exterior" 
+            alt="Exterieur de maison haut de gamme" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -119,7 +119,7 @@ export default function App() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gold uppercase tracking-[0.3em] text-xs md:text-sm mb-6"
           >
-            Quebec's Premier Design & Build Firm
+            La reference design et renovation au Quebec
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
@@ -127,8 +127,8 @@ export default function App() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-5xl md:text-7xl lg:text-8xl font-serif font-light leading-tight mb-8"
           >
-            Elevating the Art of <br className="hidden md:block" />
-            <span className="italic text-gray-300">Living Spaces.</span>
+            Sublimer l'art de <br className="hidden md:block" />
+            <span className="italic text-gray-300">vos espaces de vie.</span>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -136,7 +136,7 @@ export default function App() {
             transition={{ duration: 1, delay: 0.8 }}
           >
             <a href="#portfolio" className="inline-flex items-center space-x-3 text-sm uppercase tracking-widest border-b border-gold pb-1 hover:text-gold transition-colors">
-              <span>View Our Work</span>
+              <span>Voir nos realisations</span>
               <ArrowRight size={16} />
             </a>
           </motion.div>
@@ -152,15 +152,15 @@ export default function App() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <p className="text-gold uppercase tracking-[0.2em] text-xs mb-6">Our Philosophy</p>
+            <p className="text-gold uppercase tracking-[0.2em] text-xs mb-6">Notre philosophie</p>
             <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">
-              We transform houses into <span className="italic text-gray-400">masterpieces</span> of modern living.
+              Nous transformons les maisons en <span className="italic text-gray-400">oeuvres d'art</span> de l'habitat moderne.
             </h2>
             <p className="text-gray-400 leading-relaxed mb-8 font-light">
-              Based in Quebec, Aura brings a refined, architectural approach to home renovations. We believe that true luxury lies in the details—the perfect alignment of a shadow gap, the tactile quality of natural stone, and the seamless flow of light through a space.
+              Basee au Quebec, Aura propose une approche architecturale exigeante de la renovation residentielle. Pour nous, le vrai luxe se joue dans les details : un alignement parfait, la texture de la pierre naturelle et la fluidite de la lumiere dans chaque piece.
             </p>
             <a href="#contact" className="inline-block border border-white/20 px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-ink transition-all duration-500">
-              Discover Our Process
+              Decouvrir notre processus
             </a>
           </motion.div>
           <motion.div 
@@ -172,14 +172,14 @@ export default function App() {
           >
             <img 
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" 
-              alt="Architectural Details" 
+              alt="Details architecturaux" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-charcoal border border-white/10 flex items-center justify-center p-6 hidden md:flex">
               <p className="text-center font-serif text-xl">
                 <span className="block text-gold text-4xl mb-2">15+</span>
-                Years of Excellence
+                Ans d'excellence
               </p>
             </div>
           </motion.div>
@@ -197,11 +197,11 @@ export default function App() {
             variants={fadeInUp}
           >
             <div>
-              <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Selected Works</p>
-              <h2 className="text-4xl md:text-5xl font-serif">Featured Projects</h2>
+              <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Realisations selectionnees</p>
+              <h2 className="text-4xl md:text-5xl font-serif">Projets a la une</h2>
             </div>
             <a href="#" className="hidden md:inline-flex items-center space-x-2 text-sm uppercase tracking-widest hover:text-gold transition-colors">
-              <span>View All Projects</span>
+              <span>Voir tous les projets</span>
               <ArrowRight size={16} />
             </a>
           </motion.div>
@@ -224,10 +224,10 @@ export default function App() {
                 />
               </div>
               <div className="lg:col-span-4 lg:pl-12">
-                <p className="text-gold text-xs uppercase tracking-[0.2em] mb-4">01 — Complete Renovation</p>
+                <p className="text-gold text-xs uppercase tracking-[0.2em] mb-4">01 — Renovation complete</p>
                 <h3 className="text-3xl font-serif mb-4">The Laurentian Estate</h3>
-                <p className="text-gray-400 font-light mb-8">A complete interior gut and redesign of a mid-century modern home, focusing on natural light and premium materials.</p>
-                <a href="#" className="text-sm uppercase tracking-widest border-b border-white/30 pb-1 hover:border-gold hover:text-gold transition-colors">Explore Project</a>
+                <p className="text-gray-400 font-light mb-8">Reamenagement integral et redesign d'une residence moderniste, avec un accent sur la lumiere naturelle et les materiaux haut de gamme.</p>
+                <a href="#" className="text-sm uppercase tracking-widest border-b border-white/30 pb-1 hover:border-gold hover:text-gold transition-colors">Explorer le projet</a>
               </div>
             </motion.div>
 
@@ -240,10 +240,10 @@ export default function App() {
               variants={fadeInUp}
             >
               <div className="lg:col-span-4 lg:pr-12 order-2 lg:order-1">
-                <p className="text-gold text-xs uppercase tracking-[0.2em] mb-4">02 — Kitchen & Living</p>
+                <p className="text-gold text-xs uppercase tracking-[0.2em] mb-4">02 — Cuisine & Sejour</p>
                 <h3 className="text-3xl font-serif mb-4">Westmount Penthouse</h3>
-                <p className="text-gray-400 font-light mb-8">Elevating an urban penthouse with bespoke millwork, imported marble, and integrated smart home technology.</p>
-                <a href="#" className="text-sm uppercase tracking-widest border-b border-white/30 pb-1 hover:border-gold hover:text-gold transition-colors">Explore Project</a>
+                <p className="text-gray-400 font-light mb-8">Mise en valeur d'un penthouse urbain avec menuiserie sur mesure, marbre importe et technologies domotiques integrees.</p>
+                <a href="#" className="text-sm uppercase tracking-widest border-b border-white/30 pb-1 hover:border-gold hover:text-gold transition-colors">Explorer le projet</a>
               </div>
               <div className="lg:col-span-8 overflow-hidden group order-1 lg:order-2">
                 <img 
@@ -268,7 +268,7 @@ export default function App() {
           variants={fadeInUp}
         >
           <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Transformations</p>
-          <h2 className="text-4xl md:text-5xl font-serif">Vision Realized</h2>
+          <h2 className="text-4xl md:text-5xl font-serif">Vision realisee</h2>
         </motion.div>
 
         <motion.div 
@@ -282,23 +282,23 @@ export default function App() {
             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
             <img 
               src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" 
-              alt="Before" 
+              alt="Avant" 
               className="w-full h-[400px] object-cover grayscale"
               referrerPolicy="no-referrer"
             />
             <div className="absolute top-6 left-6 z-20 bg-ink/80 backdrop-blur-sm px-4 py-1">
-              <span className="text-xs uppercase tracking-widest">Before</span>
+              <span className="text-xs uppercase tracking-widest">Avant</span>
             </div>
           </motion.div>
           <motion.div variants={fadeInUp} className="relative group overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2070&auto=format&fit=crop" 
-              alt="After" 
+              alt="Apres" 
               className="w-full h-[400px] object-cover transition-transform duration-1000 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
             <div className="absolute top-6 left-6 z-20 bg-gold text-ink px-4 py-1">
-              <span className="text-xs uppercase tracking-widest font-medium">After</span>
+              <span className="text-xs uppercase tracking-widest font-medium">Apres</span>
             </div>
           </motion.div>
         </motion.div>
@@ -315,8 +315,8 @@ export default function App() {
             variants={fadeInUp}
           >
             <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Expertise</p>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Our Services</h2>
-            <p className="text-gray-400 font-light">Comprehensive design and build solutions tailored to the most discerning clients.</p>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">Nos services</h2>
+            <p className="text-gray-400 font-light">Des solutions completes de design et renovation, concues pour une clientele exigeante.</p>
           </motion.div>
 
           <motion.div 
@@ -328,16 +328,16 @@ export default function App() {
           >
             {[
               {
-                title: "Full Home Renovation",
-                desc: "Complete structural and aesthetic transformations of luxury properties, managed end-to-end."
+                title: "Renovation complete de residence",
+                desc: "Transformations structurelles et esthetiques completes de proprietes haut de gamme, de A a Z."
               },
               {
-                title: "Custom Kitchens & Baths",
-                desc: "Bespoke culinary and wellness spaces featuring premium imported materials and custom millwork."
+                title: "Cuisines et salles de bain sur mesure",
+                desc: "Espaces cuisines et bien-etre personnalises, avec materiaux importes premium et menuiserie sur mesure."
               },
               {
-                title: "Architectural Design",
-                desc: "Collaborative spatial planning and interior architecture that maximizes flow and natural light."
+                title: "Conception architecturale",
+                desc: "Planification spatiale collaborative et architecture interieure qui optimisent circulation et lumiere naturelle."
               }
             ].map((service, idx) => (
               <motion.div 
@@ -368,7 +368,7 @@ export default function App() {
             </svg>
           </div>
           <h3 className="text-2xl md:text-4xl font-serif leading-relaxed mb-8">
-            "Aura didn't just renovate our home; they completely reimagined how we live. The attention to detail and craftsmanship is simply unparalleled in Quebec."
+            "Aura n'a pas seulement renove notre maison : l'equipe a completement repense notre facon de vivre. Le sens du detail et la qualite d'execution sont incomparables au Quebec."
           </h3>
           <p className="uppercase tracking-[0.2em] text-xs text-gray-400">
             <span className="text-white font-medium">Marie & Laurent</span> — Outremont
@@ -388,10 +388,10 @@ export default function App() {
               variants={fadeInUp}
               className="py-12"
             >
-              <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Start Your Project</p>
-              <h2 className="text-4xl md:text-6xl font-serif mb-8">Let's discuss your vision.</h2>
+              <p className="text-gold uppercase tracking-[0.2em] text-xs mb-4">Lancez votre projet</p>
+              <h2 className="text-4xl md:text-6xl font-serif mb-8">Parlons de votre vision.</h2>
               <p className="text-gray-400 font-light mb-12 max-w-md">
-                Schedule a private consultation with our lead architects to explore the possibilities for your property.
+                Planifiez une consultation privee avec nos architectes principaux pour explorer le potentiel de votre propriete.
               </p>
               
               <div className="space-y-6">
@@ -420,24 +420,24 @@ export default function App() {
               <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
-                    <label className="text-xs uppercase tracking-widest text-gray-400">First Name</label>
+                    <label className="text-xs uppercase tracking-widest text-gray-400">Prenom</label>
                     <input type="text" className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-gold transition-colors" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs uppercase tracking-widest text-gray-400">Last Name</label>
+                    <label className="text-xs uppercase tracking-widest text-gray-400">Nom</label>
                     <input type="text" className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-gold transition-colors" />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-gray-400">Email Address</label>
+                  <label className="text-xs uppercase tracking-widest text-gray-400">Adresse e-mail</label>
                   <input type="email" className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-gold transition-colors" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs uppercase tracking-widest text-gray-400">Project Details</label>
+                  <label className="text-xs uppercase tracking-widest text-gray-400">Details du projet</label>
                   <textarea rows={4} className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-gold transition-colors resize-none" />
                 </div>
                 <button className="w-full bg-gold text-ink py-4 text-sm uppercase tracking-widest font-medium hover:bg-white transition-colors duration-300">
-                  Submit Inquiry
+                  Envoyer la demande
                 </button>
               </form>
             </motion.div>
@@ -454,7 +454,7 @@ export default function App() {
                 AURA<span className="text-gold">.</span>
               </a>
               <p className="text-gray-500 font-light text-sm max-w-sm">
-                Elevating the art of living spaces through uncompromising design and master craftsmanship in Quebec.
+                Sublimer l'art des espaces de vie grace a un design exigeant et un savoir-faire d'exception au Quebec.
               </p>
             </div>
             <div>
@@ -468,7 +468,7 @@ export default function App() {
               </ul>
             </div>
             <div>
-              <h4 className="text-xs uppercase tracking-widest text-white mb-6">Connect</h4>
+              <h4 className="text-xs uppercase tracking-widest text-white mb-6">Reseaux</h4>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-gold hover:border-gold transition-colors">
                   <Instagram size={18} />
@@ -484,11 +484,11 @@ export default function App() {
           </div>
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-xs mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Aura Architecture & Renovation. All rights reserved.
+              &copy; {new Date().getFullYear()} Aura Architecture & Renovation. Tous droits reserves.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-600 hover:text-white text-xs transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-600 hover:text-white text-xs transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-600 hover:text-white text-xs transition-colors">Politique de confidentialite</a>
+              <a href="#" className="text-gray-600 hover:text-white text-xs transition-colors">Conditions d'utilisation</a>
             </div>
           </div>
         </div>
